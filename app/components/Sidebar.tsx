@@ -16,7 +16,7 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
-import { Home as HomeIcon, Logout as LogoutIcon, Close as CloseIcon } from "@mui/icons-material";
+import { Home as HomeIcon, Dashboard as DashboardIcon, Logout as LogoutIcon, Close as CloseIcon } from "@mui/icons-material";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { logout } from "../store/slices/authSlice";
 
@@ -27,6 +27,11 @@ const menuItems = [
     text: "Home",
     icon: <HomeIcon />,
     path: "/home",
+  },
+  {
+    text: "Dashboard",
+    icon: <DashboardIcon />,
+    path: "/home/dashboard",
   },
 ];
 
